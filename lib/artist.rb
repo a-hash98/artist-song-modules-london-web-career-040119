@@ -2,7 +2,13 @@ require 'pry'
 require_relative '../config/environment'
 
 class Artist
-  extend Memorable
+
+  extend Memorable::ClassMethods
+  extend Findable::ClassMethods
+  #include Memorable::InstanceMethods
+  include Paramable::InstanceMethods
+
+
 
   attr_accessor :name
   attr_reader :songs
