@@ -4,7 +4,7 @@ require_relative '../config/environment'
 class Song
   extend Memorable
   extend Findable
-  include paramble
+  include Paramble
 
   attr_accessor :name
   attr_reader :artist
