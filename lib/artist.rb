@@ -3,8 +3,6 @@ require_relative '../config/environment'
 
 class Artist
   extend Memorable
-  include Paramble
-
 
   attr_accessor :name
   attr_reader :songs
